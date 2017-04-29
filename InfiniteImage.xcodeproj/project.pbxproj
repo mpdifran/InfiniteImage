@@ -52,6 +52,7 @@
 		FF6605341EB5095D005F71C2 /* IFIURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605331EB5095D005F71C2 /* IFIURLSessionMock.swift */; };
 		FF6605361EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605351EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift */; };
 		FF6605381EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */; };
+		FF6605441EB51233005F71C2 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605431EB51233005F71C2 /* MainAssembler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +209,7 @@
 		FF6605331EB5095D005F71C2 /* IFIURLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSessionMock.swift; sourceTree = "<group>"; };
 		FF6605351EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSesstionTaskMock.swift; sourceTree = "<group>"; };
 		FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLRequestProviderMock.swift; sourceTree = "<group>"; };
+		FF6605431EB51233005F71C2 /* MainAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				FF6605101EB4FF30005F71C2 /* HTTP */,
 				FF6604DB1EB4F3B8005F71C2 /* IFIURLSession */,
 				FF6604551EB4F106005F71C2 /* AppDelegate.swift */,
+				FF6605431EB51233005F71C2 /* MainAssembler.swift */,
 				FF6604571EB4F106005F71C2 /* ViewController.swift */,
 				FF6604591EB4F106005F71C2 /* Main.storyboard */,
 				FF66045C1EB4F106005F71C2 /* Assets.xcassets */,
@@ -622,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF6604DF1EB4F43D005F71C2 /* IFIURLSessionTask.swift in Sources */,
+				FF6605441EB51233005F71C2 /* MainAssembler.swift in Sources */,
 				FF6604DD1EB4F3E1005F71C2 /* IFIURLSession.swift in Sources */,
 				FF6604E21EB4F5EF005F71C2 /* IFIImageFetcher.swift in Sources */,
 				FF6604581EB4F106005F71C2 /* ViewController.swift in Sources */,

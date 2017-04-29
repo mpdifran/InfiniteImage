@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Swinject
 
 // MARK: - IFIURLSession
 
@@ -25,5 +26,16 @@ extension URLSession: IFIURLSession {
         // Provide a type for the task in order to call the real implementation.
         let task: URLSessionDataTask = dataTask(with: request, completionHandler: completionHandler)
         return task
+    }
+}
+
+// MARK: - IFIURLSessionAssembly
+
+class IFIURLSessionAssembly: Assembly {
+
+    func assemble(container: Container) {
+        container.register(IFIURLSession.self, factory: { r in
+            return URLSession.shared
+        }).inObjectScope(.container)
     }
 }

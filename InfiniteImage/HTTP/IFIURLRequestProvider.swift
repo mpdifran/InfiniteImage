@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Swinject
 
 // MARK: - IFIURLRequestProvider
 
@@ -85,4 +86,15 @@ private struct Value {
     }
     
     private init() { }
+}
+
+// MARK: - IFIURLRequestProviderAssembly
+
+class IFIURLRequestProviderAssembly: Assembly {
+
+    func assemble(container: Container) {
+        container.register(IFIURLRequestProvider.self, factory: { r in
+            return IFIDefaultURLRequestProvider()
+        }).inObjectScope(.weak)
+    }
 }
