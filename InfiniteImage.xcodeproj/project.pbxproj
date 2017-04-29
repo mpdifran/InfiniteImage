@@ -33,7 +33,6 @@
 
 /* Begin PBXBuildFile section */
 		FF6604561EB4F106005F71C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604551EB4F106005F71C2 /* AppDelegate.swift */; };
-		FF6604581EB4F106005F71C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604571EB4F106005F71C2 /* ViewController.swift */; };
 		FF66045B1EB4F106005F71C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6604591EB4F106005F71C2 /* Main.storyboard */; };
 		FF66045D1EB4F106005F71C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF66045C1EB4F106005F71C2 /* Assets.xcassets */; };
 		FF6604601EB4F106005F71C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF66045E1EB4F106005F71C2 /* LaunchScreen.storyboard */; };
@@ -53,6 +52,8 @@
 		FF6605361EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605351EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift */; };
 		FF6605381EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */; };
 		FF6605441EB51233005F71C2 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605431EB51233005F71C2 /* MainAssembler.swift */; };
+		FF6605521EB5132A005F71C2 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605511EB5132A005F71C2 /* ImageCollectionViewController.swift */; };
+		FF6605541EB51499005F71C2 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605531EB51499005F71C2 /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,7 +189,6 @@
 /* Begin PBXFileReference section */
 		FF6604521EB4F106005F71C2 /* InfiniteImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6604551EB4F106005F71C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF6604571EB4F106005F71C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF66045A1EB4F106005F71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF66045C1EB4F106005F71C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF66045F1EB4F106005F71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -210,6 +210,8 @@
 		FF6605351EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSesstionTaskMock.swift; sourceTree = "<group>"; };
 		FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLRequestProviderMock.swift; sourceTree = "<group>"; };
 		FF6605431EB51233005F71C2 /* MainAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		FF6605511EB5132A005F71C2 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		FF6605531EB51499005F71C2 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,12 +258,12 @@
 		FF6604541EB4F106005F71C2 /* InfiniteImage */ = {
 			isa = PBXGroup;
 			children = (
+				FF6605501EB5130F005F71C2 /* UserInterface */,
 				FF6604E01EB4F5C8005F71C2 /* IFIImageFetcher */,
 				FF6605101EB4FF30005F71C2 /* HTTP */,
 				FF6604DB1EB4F3B8005F71C2 /* IFIURLSession */,
 				FF6604551EB4F106005F71C2 /* AppDelegate.swift */,
 				FF6605431EB51233005F71C2 /* MainAssembler.swift */,
-				FF6604571EB4F106005F71C2 /* ViewController.swift */,
 				FF6604591EB4F106005F71C2 /* Main.storyboard */,
 				FF66045C1EB4F106005F71C2 /* Assets.xcassets */,
 				FF66045E1EB4F106005F71C2 /* LaunchScreen.storyboard */,
@@ -367,6 +369,15 @@
 				FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FF6605501EB5130F005F71C2 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				FF6605511EB5132A005F71C2 /* ImageCollectionViewController.swift */,
+				FF6605531EB51499005F71C2 /* ImageCollectionViewCell.swift */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -628,8 +639,9 @@
 				FF6605441EB51233005F71C2 /* MainAssembler.swift in Sources */,
 				FF6604DD1EB4F3E1005F71C2 /* IFIURLSession.swift in Sources */,
 				FF6604E21EB4F5EF005F71C2 /* IFIImageFetcher.swift in Sources */,
-				FF6604581EB4F106005F71C2 /* ViewController.swift in Sources */,
 				FF6605121EB4FF52005F71C2 /* IFIURLRequestProvider.swift in Sources */,
+				FF6605521EB5132A005F71C2 /* ImageCollectionViewController.swift in Sources */,
+				FF6605541EB51499005F71C2 /* ImageCollectionViewCell.swift in Sources */,
 				FF66050E1EB4FC4A005F71C2 /* URL+QueryItems.swift in Sources */,
 				FF6604561EB4F106005F71C2 /* AppDelegate.swift in Sources */,
 			);
@@ -790,6 +802,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 538R2KUTXD;
 				INFOPLIST_FILE = InfiniteImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdfprojects.InfiniteImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -804,6 +817,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 538R2KUTXD;
 				INFOPLIST_FILE = InfiniteImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdfprojects.InfiniteImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";

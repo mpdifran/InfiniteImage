@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Swinject
 
 let IFIImageFetcherErrorDomain = "IFIImageFetcherErrorDomain"
 
@@ -131,5 +132,19 @@ private extension NSError {
 
     convenience init(code: IFIImageFetcherErrorCode) {
         self.init(domain: IFIImageFetcherErrorDomain, code: code.rawValue, userInfo: nil)
+    }
+}
+
+// MARK: - IFIImageFetcherAssembly
+
+class IFIImageFetcherAssembly: Assembly {
+
+    func assemble(container: Container) {
+        container.register(IFIImageFetcher.self) { r in
+            let session = r.resolve(IFIURLSession.self)!
+            let requestProvider = r.resolve(IFIURLRequestProvider.self)!
+
+            return IFIDefaultImageFetcher(urlSession: session, requestProvider: requestProvider)
+        }
     }
 }

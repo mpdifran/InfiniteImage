@@ -8,6 +8,7 @@
 
 import Foundation
 import Swinject
+import SwinjectStoryboard
 
 // MARK: - MainAssembler
 
@@ -16,10 +17,14 @@ class MainAssembler {
         return assembler.resolver
     }
 
-    private let assembler = Assembler()
+    private let assembler = Assembler(container: SwinjectStoryboard.defaultContainer)
 
     init() {
+        Container.loggingFunction = nil
+
         assembler.apply(assembly: IFIURLSessionAssembly())
         assembler.apply(assembly: IFIURLRequestProviderAssembly())
+        assembler.apply(assembly: IFIImageFetcherAssembly())
+        assembler.apply(assembly: ImageCollectionViewControllerAssembly())
     }
 }

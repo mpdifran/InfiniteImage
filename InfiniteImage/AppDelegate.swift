@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwinjectStoryboard
 
 // MARK: - AppDelegate
 
@@ -22,6 +23,25 @@ extension AppDelegate: UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        setupWindow()
+
         return true
+    }
+}
+
+// MARK: Private Methods
+
+private extension AppDelegate {
+
+    func setupWindow() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.makeKeyAndVisible()
+
+        let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil)
+
+        window.backgroundColor = UIColor.white
+        window.rootViewController = storyboard.instantiateInitialViewController()
+
+        self.window = window
     }
 }
