@@ -26,5 +26,6 @@ class MainAssembler {
         assembler.apply(assembly: IFIURLRequestProviderAssembly())
         assembler.apply(assembly: IFIImageFetcherAssembly())
         assembler.apply(assembly: ImageCollectionViewControllerAssembly())
+        assembler.apply(assembly: IFIAsyncDataLoaderAssembly())
     }
 }

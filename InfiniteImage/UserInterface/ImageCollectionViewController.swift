@@ -22,6 +22,7 @@ private struct ReuseIdentifier {
 
 class ImageCollectionViewController: UICollectionViewController {
     var imageFetcher: IFIImageFetcher!
+    var dataLoader: IFIAsyncDataLoader!
 
     var images = [IFIImage]() {
         didSet {
@@ -70,9 +71,18 @@ extension ImageCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifier.imageCell, for: indexPath)
 
-        /*if let imageCell = cell as? ImageCollectionViewCell {
-            imageCell.imageView
-        }*/
+        if let imageCell = cell as? ImageCollectionViewCell {
+            let image = images[indexPath.row]
+            let identifier = imageCell.hash
+
+            dataLoader.loadData(from: image.thumbnailURL, withIdentifier: identifier) { (data) in
+                let image = UIImage(data: data)
+
+                DispatchQueue.main.async {
+                    imageCell.imageView.image = image
+                }
+            }
+        }
 
         return cell
     }
@@ -85,6 +95,7 @@ class ImageCollectionViewControllerAssembly: Assembly {
     func assemble(container: Container) {
         container.storyboardInitCompleted(ImageCollectionViewController.self) { (r, c) in
             c.imageFetcher = r.resolve(IFIImageFetcher.self)!
+            c.dataLoader = r.resolve(IFIAsyncDataLoader.self)!
         }
     }
 }

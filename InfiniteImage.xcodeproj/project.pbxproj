@@ -32,6 +32,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		FF3BF8A01EB51CCD006603BA /* IFIDataLoaderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3BF89F1EB51CCD006603BA /* IFIDataLoaderOperation.swift */; };
 		FF6604561EB4F106005F71C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604551EB4F106005F71C2 /* AppDelegate.swift */; };
 		FF66045B1EB4F106005F71C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6604591EB4F106005F71C2 /* Main.storyboard */; };
 		FF66045D1EB4F106005F71C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF66045C1EB4F106005F71C2 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		FF6605441EB51233005F71C2 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605431EB51233005F71C2 /* MainAssembler.swift */; };
 		FF6605521EB5132A005F71C2 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605511EB5132A005F71C2 /* ImageCollectionViewController.swift */; };
 		FF6605541EB51499005F71C2 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605531EB51499005F71C2 /* ImageCollectionViewCell.swift */; };
+		FF66056F1EB51987005F71C2 /* IFIAsyncDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF66056E1EB51987005F71C2 /* IFIAsyncDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF3BF89F1EB51CCD006603BA /* IFIDataLoaderOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIDataLoaderOperation.swift; sourceTree = "<group>"; };
 		FF6604521EB4F106005F71C2 /* InfiniteImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6604551EB4F106005F71C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF66045A1EB4F106005F71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -212,6 +215,7 @@
 		FF6605431EB51233005F71C2 /* MainAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 		FF6605511EB5132A005F71C2 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		FF6605531EB51499005F71C2 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF66056E1EB51987005F71C2 /* IFIAsyncDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIAsyncDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				FF6605501EB5130F005F71C2 /* UserInterface */,
+				FF66056D1EB5195B005F71C2 /* IFIAsyncDataLoader */,
 				FF6604E01EB4F5C8005F71C2 /* IFIImageFetcher */,
 				FF6605101EB4FF30005F71C2 /* HTTP */,
 				FF6604DB1EB4F3B8005F71C2 /* IFIURLSession */,
@@ -378,6 +383,15 @@
 				FF6605531EB51499005F71C2 /* ImageCollectionViewCell.swift */,
 			);
 			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		FF66056D1EB5195B005F71C2 /* IFIAsyncDataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FF66056E1EB51987005F71C2 /* IFIAsyncDataLoader.swift */,
+				FF3BF89F1EB51CCD006603BA /* IFIDataLoaderOperation.swift */,
+			);
+			path = IFIAsyncDataLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,10 +651,12 @@
 			files = (
 				FF6604DF1EB4F43D005F71C2 /* IFIURLSessionTask.swift in Sources */,
 				FF6605441EB51233005F71C2 /* MainAssembler.swift in Sources */,
+				FF3BF8A01EB51CCD006603BA /* IFIDataLoaderOperation.swift in Sources */,
 				FF6604DD1EB4F3E1005F71C2 /* IFIURLSession.swift in Sources */,
 				FF6604E21EB4F5EF005F71C2 /* IFIImageFetcher.swift in Sources */,
 				FF6605121EB4FF52005F71C2 /* IFIURLRequestProvider.swift in Sources */,
 				FF6605521EB5132A005F71C2 /* ImageCollectionViewController.swift in Sources */,
+				FF66056F1EB51987005F71C2 /* IFIAsyncDataLoader.swift in Sources */,
 				FF6605541EB51499005F71C2 /* ImageCollectionViewCell.swift in Sources */,
 				FF66050E1EB4FC4A005F71C2 /* URL+QueryItems.swift in Sources */,
 				FF6604561EB4F106005F71C2 /* AppDelegate.swift in Sources */,

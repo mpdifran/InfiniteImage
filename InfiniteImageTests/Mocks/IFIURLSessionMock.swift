@@ -15,12 +15,21 @@ class IFIURLSessionMock: IFIURLSession {
     var dataTaskMock = IFIURLSessionDataTaskMock()
 
     var lastRequest: URLRequest?
+    var lastURL: URL?
     var lastCompletionHandler: ((Data?, URLResponse?, Error?) -> Void)?
 
     func dataTask(with request: URLRequest,
                   completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> IFIURLSessionDataTask {
 
         lastRequest = request
+        lastCompletionHandler = completionHandler
+
+        return dataTaskMock
+    }
+
+    func dataTask(with url: URL,
+                  completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> IFIURLSessionDataTask {
+        lastURL = url
         lastCompletionHandler = completionHandler
 
         return dataTaskMock
