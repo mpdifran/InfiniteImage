@@ -48,6 +48,10 @@
 		FF66050E1EB4FC4A005F71C2 /* URL+QueryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */; };
 		FF6605121EB4FF52005F71C2 /* IFIURLRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */; };
 		FF6605151EB5076E005F71C2 /* URLQueryItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605141EB5076E005F71C2 /* URLQueryItemsTests.swift */; };
+		FF6605311EB50944005F71C2 /* IFIImageFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605301EB50944005F71C2 /* IFIImageFetcherTests.swift */; };
+		FF6605341EB5095D005F71C2 /* IFIURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605331EB5095D005F71C2 /* IFIURLSessionMock.swift */; };
+		FF6605361EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605351EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift */; };
+		FF6605381EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +204,10 @@
 		FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+QueryItems.swift"; sourceTree = "<group>"; };
 		FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLRequestProvider.swift; sourceTree = "<group>"; };
 		FF6605141EB5076E005F71C2 /* URLQueryItemsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryItemsTests.swift; sourceTree = "<group>"; };
+		FF6605301EB50944005F71C2 /* IFIImageFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIImageFetcherTests.swift; sourceTree = "<group>"; };
+		FF6605331EB5095D005F71C2 /* IFIURLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSessionMock.swift; sourceTree = "<group>"; };
+		FF6605351EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSesstionTaskMock.swift; sourceTree = "<group>"; };
+		FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLRequestProviderMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +270,8 @@
 		FF6604691EB4F106005F71C2 /* InfiniteImageTests */ = {
 			isa = PBXGroup;
 			children = (
+				FF6605321EB50947005F71C2 /* Mocks */,
+				FF6605241EB5091E005F71C2 /* IFIImageFetcher */,
 				FF6605131EB5074D005F71C2 /* HTTP */,
 				FF66046A1EB4F106005F71C2 /* InfiniteImageTests.swift */,
 				FF66046C1EB4F106005F71C2 /* Info.plist */,
@@ -336,6 +346,24 @@
 				FF6605141EB5076E005F71C2 /* URLQueryItemsTests.swift */,
 			);
 			path = HTTP;
+			sourceTree = "<group>";
+		};
+		FF6605241EB5091E005F71C2 /* IFIImageFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				FF6605301EB50944005F71C2 /* IFIImageFetcherTests.swift */,
+			);
+			path = IFIImageFetcher;
+			sourceTree = "<group>";
+		};
+		FF6605321EB50947005F71C2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FF6605331EB5095D005F71C2 /* IFIURLSessionMock.swift */,
+				FF6605351EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift */,
+				FF6605371EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,8 +635,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6605311EB50944005F71C2 /* IFIImageFetcherTests.swift in Sources */,
 				FF66046B1EB4F106005F71C2 /* InfiniteImageTests.swift in Sources */,
+				FF6605361EB509AA005F71C2 /* IFIURLSesstionTaskMock.swift in Sources */,
+				FF6605381EB50AAB005F71C2 /* IFIURLRequestProviderMock.swift in Sources */,
 				FF6605151EB5076E005F71C2 /* URLQueryItemsTests.swift in Sources */,
+				FF6605341EB5095D005F71C2 /* IFIURLSessionMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
