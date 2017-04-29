@@ -6,6 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		FF6604761EB4F1B0005F71C2 /* Carthage Update */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FF6604771EB4F1B0005F71C2 /* Build configuration list for PBXAggregateTarget "Carthage Update" */;
+			buildPhases = (
+				FF66047F1EB4F1C8005F71C2 /* Carthage Update */,
+			);
+			dependencies = (
+			);
+			name = "Carthage Update";
+			productName = "Carthage Update";
+		};
+		FF66047A1EB4F1BD005F71C2 /* Carthage Bootstrap */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FF66047B1EB4F1BD005F71C2 /* Build configuration list for PBXAggregateTarget "Carthage Bootstrap" */;
+			buildPhases = (
+				FF66048C1EB4F1E6005F71C2 /* Carthage Bootstrap */,
+			);
+			dependencies = (
+			);
+			name = "Carthage Bootstrap";
+			productName = "Carthage Bootstrap";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		FF6604561EB4F106005F71C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604551EB4F106005F71C2 /* AppDelegate.swift */; };
 		FF6604581EB4F106005F71C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604571EB4F106005F71C2 /* ViewController.swift */; };
@@ -61,6 +86,7 @@
 			children = (
 				FF6604541EB4F106005F71C2 /* InfiniteImage */,
 				FF6604691EB4F106005F71C2 /* InfiniteImageTests */,
+				FF6604751EB4F14D005F71C2 /* Carthage */,
 				FF6604531EB4F106005F71C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +120,13 @@
 				FF66046C1EB4F106005F71C2 /* Info.plist */,
 			);
 			path = InfiniteImageTests;
+			sourceTree = "<group>";
+		};
+		FF6604751EB4F14D005F71C2 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Carthage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +188,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = FF6604511EB4F106005F71C2;
 					};
+					FF6604761EB4F1B0005F71C2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 538R2KUTXD;
+						ProvisioningStyle = Automatic;
+					};
+					FF66047A1EB4F1BD005F71C2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 538R2KUTXD;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = FF66044D1EB4F106005F71C2 /* Build configuration list for PBXProject "InfiniteImage" */;
@@ -172,6 +215,8 @@
 			targets = (
 				FF6604511EB4F106005F71C2 /* InfiniteImage */,
 				FF6604651EB4F106005F71C2 /* InfiniteImageTests */,
+				FF6604761EB4F1B0005F71C2 /* Carthage Update */,
+				FF66047A1EB4F1BD005F71C2 /* Carthage Bootstrap */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +240,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF66047F1EB4F1C8005F71C2 /* Carthage Update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Carthage Update";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf ./Carthage\n\ncarthage update --use-ssh --platform iOS --no-use-binaries --no-build";
+		};
+		FF66048C1EB4F1E6005F71C2 /* Carthage Bootstrap */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Carthage Bootstrap";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf ./Carthage\n\ncarthage bootstrap --use-ssh --platform iOS --no-use-binaries --no-build";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF66044E1EB4F106005F71C2 /* Sources */ = {
@@ -395,6 +471,38 @@
 			};
 			name = Release;
 		};
+		FF6604781EB4F1B0005F71C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 538R2KUTXD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF6604791EB4F1B0005F71C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 538R2KUTXD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF66047C1EB4F1BD005F71C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 538R2KUTXD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF66047D1EB4F1BD005F71C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 538R2KUTXD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,6 +528,22 @@
 			buildConfigurations = (
 				FF6604731EB4F106005F71C2 /* Debug */,
 				FF6604741EB4F106005F71C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF6604771EB4F1B0005F71C2 /* Build configuration list for PBXAggregateTarget "Carthage Update" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6604781EB4F1B0005F71C2 /* Debug */,
+				FF6604791EB4F1B0005F71C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF66047B1EB4F1BD005F71C2 /* Build configuration list for PBXAggregateTarget "Carthage Bootstrap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF66047C1EB4F1BD005F71C2 /* Debug */,
+				FF66047D1EB4F1BD005F71C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
