@@ -38,6 +38,10 @@
 		FF66045D1EB4F106005F71C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF66045C1EB4F106005F71C2 /* Assets.xcassets */; };
 		FF6604601EB4F106005F71C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF66045E1EB4F106005F71C2 /* LaunchScreen.storyboard */; };
 		FF66046B1EB4F106005F71C2 /* InfiniteImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF66046A1EB4F106005F71C2 /* InfiniteImageTests.swift */; };
+		FF6604C01EB4F30F005F71C2 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF66049B1EB4F2DF005F71C2 /* Swinject.framework */; };
+		FF6604C11EB4F30F005F71C2 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF66049B1EB4F2DF005F71C2 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF6604C51EB4F316005F71C2 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6604B51EB4F2E7005F71C2 /* SwinjectStoryboard.framework */; };
+		FF6604C61EB4F316005F71C2 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF6604B51EB4F2E7005F71C2 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,127 @@
 			remoteGlobalIDString = FF6604511EB4F106005F71C2;
 			remoteInfo = InfiniteImage;
 		};
+		FF66049A1EB4F2DF005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE811B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
+		FF66049C1EB4F2DF005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE8B1B5FC9DF00294975;
+			remoteInfo = "Swinject-iOSTests";
+		};
+		FF66049E1EB4F2DF005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899BC1B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSX";
+		};
+		FF6604A01EB4F2DF005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899C51B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSXTests";
+		};
+		FF6604A21EB4F2DF005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985010C61BBE76D400A2CCFC;
+			remoteInfo = "Swinject-watchOS";
+		};
+		FF6604A41EB4F2DF005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C7F1BBFC7A50005C6D3;
+			remoteInfo = "Swinject-tvOS";
+		};
+		FF6604A61EB4F2DF005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C881BBFC7A60005C6D3;
+			remoteInfo = "Swinject-tvOSTests";
+		};
+		FF6604B41EB4F2E7005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904061CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOS";
+		};
+		FF6604B61EB4F2E7005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904101CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOSTests";
+		};
+		FF6604B81EB4F2E7005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562781CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSX";
+		};
+		FF6604BA1EB4F2E7005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562811CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSXTests";
+		};
+		FF6604BC1EB4F2E7005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562941CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOS";
+		};
+		FF6604BE1EB4F2E7005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D5629D1CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOSTests";
+		};
+		FF6604C21EB4F30F005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 981ABE801B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
+		FF6604C71EB4F316005F71C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 985904051CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF6604C41EB4F30F005F71C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF6604C61EB4F316005F71C2 /* SwinjectStoryboard.framework in Embed Frameworks */,
+				FF6604C11EB4F30F005F71C2 /* Swinject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF6604521EB4F106005F71C2 /* InfiniteImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +185,9 @@
 		FF6604661EB4F106005F71C2 /* InfiniteImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF66046A1EB4F106005F71C2 /* InfiniteImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteImageTests.swift; sourceTree = "<group>"; };
 		FF66046C1EB4F106005F71C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF66048D1EB4F2A5005F71C2 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
+		FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +195,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6604C51EB4F316005F71C2 /* SwinjectStoryboard.framework in Frameworks */,
+				FF6604C01EB4F30F005F71C2 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +217,8 @@
 				FF6604691EB4F106005F71C2 /* InfiniteImageTests */,
 				FF6604751EB4F14D005F71C2 /* Carthage */,
 				FF6604531EB4F106005F71C2 /* Products */,
+				FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */,
+				FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +256,36 @@
 		FF6604751EB4F14D005F71C2 /* Carthage */ = {
 			isa = PBXGroup;
 			children = (
+				FF66048D1EB4F2A5005F71C2 /* Cartfile */,
 			);
 			name = Carthage;
+			sourceTree = "<group>";
+		};
+		FF66048F1EB4F2DE005F71C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF66049B1EB4F2DF005F71C2 /* Swinject.framework */,
+				FF66049D1EB4F2DF005F71C2 /* SwinjectTests.xctest */,
+				FF66049F1EB4F2DF005F71C2 /* Swinject.framework */,
+				FF6604A11EB4F2DF005F71C2 /* SwinjectTests.xctest */,
+				FF6604A31EB4F2DF005F71C2 /* Swinject.framework */,
+				FF6604A51EB4F2DF005F71C2 /* Swinject.framework */,
+				FF6604A71EB4F2DF005F71C2 /* SwinjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF6604A91EB4F2E6005F71C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF6604B51EB4F2E7005F71C2 /* SwinjectStoryboard.framework */,
+				FF6604B71EB4F2E7005F71C2 /* SwinjectStoryboardTests.xctest */,
+				FF6604B91EB4F2E7005F71C2 /* SwinjectStoryboard.framework */,
+				FF6604BB1EB4F2E7005F71C2 /* SwinjectStoryboardTests.xctest */,
+				FF6604BD1EB4F2E7005F71C2 /* SwinjectStoryboard.framework */,
+				FF6604BF1EB4F2E7005F71C2 /* SwinjectStoryboardTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,10 +298,13 @@
 				FF66044E1EB4F106005F71C2 /* Sources */,
 				FF66044F1EB4F106005F71C2 /* Frameworks */,
 				FF6604501EB4F106005F71C2 /* Resources */,
+				FF6604C41EB4F30F005F71C2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF6604C31EB4F30F005F71C2 /* PBXTargetDependency */,
+				FF6604C81EB4F316005F71C2 /* PBXTargetDependency */,
 			);
 			name = InfiniteImage;
 			productName = InfiniteImage;
@@ -211,6 +373,16 @@
 			mainGroup = FF6604491EB4F106005F71C2;
 			productRefGroup = FF6604531EB4F106005F71C2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF66048F1EB4F2DE005F71C2 /* Products */;
+					ProjectRef = FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */;
+				},
+				{
+					ProductGroup = FF6604A91EB4F2E6005F71C2 /* Products */;
+					ProjectRef = FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF6604511EB4F106005F71C2 /* InfiniteImage */,
@@ -220,6 +392,100 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FF66049B1EB4F2DF005F71C2 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = FF66049A1EB4F2DF005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF66049D1EB4F2DF005F71C2 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = FF66049C1EB4F2DF005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF66049F1EB4F2DF005F71C2 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = FF66049E1EB4F2DF005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604A11EB4F2DF005F71C2 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = FF6604A01EB4F2DF005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604A31EB4F2DF005F71C2 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = FF6604A21EB4F2DF005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604A51EB4F2DF005F71C2 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = FF6604A41EB4F2DF005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604A71EB4F2DF005F71C2 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = FF6604A61EB4F2DF005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604B51EB4F2E7005F71C2 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = FF6604B41EB4F2E7005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604B71EB4F2E7005F71C2 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = FF6604B61EB4F2E7005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604B91EB4F2E7005F71C2 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = FF6604B81EB4F2E7005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604BB1EB4F2E7005F71C2 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = FF6604BA1EB4F2E7005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604BD1EB4F2E7005F71C2 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = FF6604BC1EB4F2E7005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6604BF1EB4F2E7005F71C2 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = FF6604BE1EB4F2E7005F71C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF6604501EB4F106005F71C2 /* Resources */ = {
@@ -297,6 +563,16 @@
 			isa = PBXTargetDependency;
 			target = FF6604511EB4F106005F71C2 /* InfiniteImage */;
 			targetProxy = FF6604671EB4F106005F71C2 /* PBXContainerItemProxy */;
+		};
+		FF6604C31EB4F30F005F71C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Swinject-iOS";
+			targetProxy = FF6604C21EB4F30F005F71C2 /* PBXContainerItemProxy */;
+		};
+		FF6604C81EB4F316005F71C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwinjectStoryboard-iOS";
+			targetProxy = FF6604C71EB4F316005F71C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,6 +694,7 @@
 		FF6604701EB4F106005F71C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 538R2KUTXD;
 				INFOPLIST_FILE = InfiniteImage/Info.plist;
@@ -431,6 +708,7 @@
 		FF6604711EB4F106005F71C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 538R2KUTXD;
 				INFOPLIST_FILE = InfiniteImage/Info.plist;
@@ -522,6 +800,7 @@
 				FF6604711EB4F106005F71C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF6604721EB4F106005F71C2 /* Build configuration list for PBXNativeTarget "InfiniteImageTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +809,7 @@
 				FF6604741EB4F106005F71C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF6604771EB4F1B0005F71C2 /* Build configuration list for PBXAggregateTarget "Carthage Update" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +818,7 @@
 				FF6604791EB4F1B0005F71C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF66047B1EB4F1BD005F71C2 /* Build configuration list for PBXAggregateTarget "Carthage Bootstrap" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +827,7 @@
 				FF66047D1EB4F1BD005F71C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
