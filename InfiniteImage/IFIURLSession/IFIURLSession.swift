@@ -11,16 +11,19 @@ import Foundation
 // MARK: - IFIURLSession
 
 protocol IFIURLSession: class {
-    func dataTask(with request: URLRequest) -> IFIURLSessionDataTask
+
+    func dataTask(with request: URLRequest,
+                  completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> IFIURLSessionDataTask
 }
 
 // MARK: - URLSession Extension
 
 extension URLSession: IFIURLSession {
 
-    func dataTask(with request: URLRequest) -> IFIURLSessionDataTask {
+    func dataTask(with request: URLRequest,
+                  completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> IFIURLSessionDataTask {
         // Provide a type for the task in order to call the real implementation.
-        let task: URLSessionDataTask = dataTask(with: request)
+        let task: URLSessionDataTask = dataTask(with: request, completionHandler: completionHandler)
         return task
     }
 }

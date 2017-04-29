@@ -44,7 +44,9 @@
 		FF6604C61EB4F316005F71C2 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF6604B51EB4F2E7005F71C2 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF6604DD1EB4F3E1005F71C2 /* IFIURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604DC1EB4F3E1005F71C2 /* IFIURLSession.swift */; };
 		FF6604DF1EB4F43D005F71C2 /* IFIURLSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604DE1EB4F43D005F71C2 /* IFIURLSessionTask.swift */; };
-		FF6604F71EB4F771005F71C2 /* IFIURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604F61EB4F771005F71C2 /* IFIURLProvider.swift */; };
+		FF6604E21EB4F5EF005F71C2 /* IFIImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604E11EB4F5EF005F71C2 /* IFIImageFetcher.swift */; };
+		FF66050E1EB4FC4A005F71C2 /* URL+QueryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */; };
+		FF6605121EB4FF52005F71C2 /* IFIURLRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,7 +195,9 @@
 		FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
 		FF6604DC1EB4F3E1005F71C2 /* IFIURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSession.swift; sourceTree = "<group>"; };
 		FF6604DE1EB4F43D005F71C2 /* IFIURLSessionTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSessionTask.swift; sourceTree = "<group>"; };
-		FF6604F61EB4F771005F71C2 /* IFIURLProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLProvider.swift; sourceTree = "<group>"; };
+		FF6604E11EB4F5EF005F71C2 /* IFIImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIImageFetcher.swift; sourceTree = "<group>"; };
+		FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+QueryItems.swift"; sourceTree = "<group>"; };
+		FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLRequestProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +244,8 @@
 		FF6604541EB4F106005F71C2 /* InfiniteImage */ = {
 			isa = PBXGroup;
 			children = (
-				FF6604EA1EB4F759005F71C2 /* IFIURLProvider */,
+				FF6604E01EB4F5C8005F71C2 /* IFIImageFetcher */,
+				FF6605101EB4FF30005F71C2 /* HTTP */,
 				FF6604DB1EB4F3B8005F71C2 /* IFIURLSession */,
 				FF6604551EB4F106005F71C2 /* AppDelegate.swift */,
 				FF6604571EB4F106005F71C2 /* ViewController.swift */,
@@ -305,12 +310,21 @@
 			path = IFIURLSession;
 			sourceTree = "<group>";
 		};
-		FF6604EA1EB4F759005F71C2 /* IFIURLProvider */ = {
+		FF6604E01EB4F5C8005F71C2 /* IFIImageFetcher */ = {
 			isa = PBXGroup;
 			children = (
-				FF6604F61EB4F771005F71C2 /* IFIURLProvider.swift */,
+				FF6604E11EB4F5EF005F71C2 /* IFIImageFetcher.swift */,
 			);
-			path = IFIURLProvider;
+			path = IFIImageFetcher;
+			sourceTree = "<group>";
+		};
+		FF6605101EB4FF30005F71C2 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */,
+				FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */,
+			);
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,8 +584,10 @@
 			files = (
 				FF6604DF1EB4F43D005F71C2 /* IFIURLSessionTask.swift in Sources */,
 				FF6604DD1EB4F3E1005F71C2 /* IFIURLSession.swift in Sources */,
-				FF6604F71EB4F771005F71C2 /* IFIURLProvider.swift in Sources */,
+				FF6604E21EB4F5EF005F71C2 /* IFIImageFetcher.swift in Sources */,
 				FF6604581EB4F106005F71C2 /* ViewController.swift in Sources */,
+				FF6605121EB4FF52005F71C2 /* IFIURLRequestProvider.swift in Sources */,
+				FF66050E1EB4FC4A005F71C2 /* URL+QueryItems.swift in Sources */,
 				FF6604561EB4F106005F71C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
