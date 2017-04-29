@@ -24,6 +24,8 @@ class ImageCollectionViewController: UICollectionViewController {
     var imageFetcher: IFIImageFetcher!
     var dataLoader: IFIAsyncDataLoader!
 
+    var numberOfLoadedPages: UInt = 0
+
     var images = [IFIImage]() {
         didSet {
             collectionView?.reloadData()
@@ -38,18 +40,23 @@ extension ImageCollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageFetcher.fetchImages(atPage: 0) { [weak self] (images, error) in
-            if let error = error {
-                self?.showAlert(for: error)
-            }
-            self?.images = images
-        }
+        loadAnotherPage()
     }
 }
 
 // MARK: Private Methods
 
 private extension ImageCollectionViewController {
+
+    func loadAnotherPage() {
+        imageFetcher.fetchImages(atPage: numberOfLoadedPages) { [weak self] (images, error) in
+            if let error = error {
+                self?.showAlert(for: error)
+            }
+            self?.images.append(contentsOf: images)
+            self?.numberOfLoadedPages += 1
+        }
+    }
 
     func showAlert(for error: Error) {
         let alertController = UIAlertController(title: "Error", message: error.localizedDescription,
@@ -85,6 +92,36 @@ extension ImageCollectionViewController {
         }
 
         return cell
+    }
+}
+
+// MARK: UIScrollViewDelegate Methods
+
+extension ImageCollectionViewController {
+
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard let collectionView = collectionView else { return }
+
+        let height = collectionView.bounds.height
+        let contentHeight = collectionView.contentSize.height
+        let offset = collectionView.contentOffset.y
+
+        if offset + height >= contentHeight {
+            loadAnotherPage()
+        }
+    }
+
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint,
+                                            targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        guard let collectionView = collectionView else { return }
+
+        let height = collectionView.bounds.height
+        let contentHeight = collectionView.contentSize.height
+        let offset = targetContentOffset.pointee.y
+
+        if offset + height >= contentHeight {
+            loadAnotherPage()
+        }
     }
 }
 
