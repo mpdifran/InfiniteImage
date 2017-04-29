@@ -42,6 +42,8 @@
 		FF6604C11EB4F30F005F71C2 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF66049B1EB4F2DF005F71C2 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF6604C51EB4F316005F71C2 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6604B51EB4F2E7005F71C2 /* SwinjectStoryboard.framework */; };
 		FF6604C61EB4F316005F71C2 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF6604B51EB4F2E7005F71C2 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF6604DD1EB4F3E1005F71C2 /* IFIURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604DC1EB4F3E1005F71C2 /* IFIURLSession.swift */; };
+		FF6604DF1EB4F43D005F71C2 /* IFIURLSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604DE1EB4F43D005F71C2 /* IFIURLSessionTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +190,8 @@
 		FF66048D1EB4F2A5005F71C2 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		FF66048E1EB4F2DE005F71C2 /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
 		FF6604A81EB4F2E6005F71C2 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
+		FF6604DC1EB4F3E1005F71C2 /* IFIURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSession.swift; sourceTree = "<group>"; };
+		FF6604DE1EB4F43D005F71C2 /* IFIURLSessionTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLSessionTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,7 @@
 		FF6604541EB4F106005F71C2 /* InfiniteImage */ = {
 			isa = PBXGroup;
 			children = (
+				FF6604DB1EB4F3B8005F71C2 /* IFIURLSession */,
 				FF6604551EB4F106005F71C2 /* AppDelegate.swift */,
 				FF6604571EB4F106005F71C2 /* ViewController.swift */,
 				FF6604591EB4F106005F71C2 /* Main.storyboard */,
@@ -286,6 +291,15 @@
 				FF6604BF1EB4F2E7005F71C2 /* SwinjectStoryboardTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FF6604DB1EB4F3B8005F71C2 /* IFIURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				FF6604DC1EB4F3E1005F71C2 /* IFIURLSession.swift */,
+				FF6604DE1EB4F43D005F71C2 /* IFIURLSessionTask.swift */,
+			);
+			path = IFIURLSession;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,6 +557,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6604DF1EB4F43D005F71C2 /* IFIURLSessionTask.swift in Sources */,
+				FF6604DD1EB4F3E1005F71C2 /* IFIURLSession.swift in Sources */,
 				FF6604581EB4F106005F71C2 /* ViewController.swift in Sources */,
 				FF6604561EB4F106005F71C2 /* AppDelegate.swift in Sources */,
 			);
