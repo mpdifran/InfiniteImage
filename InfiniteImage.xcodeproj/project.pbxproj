@@ -47,6 +47,7 @@
 		FF6604E21EB4F5EF005F71C2 /* IFIImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6604E11EB4F5EF005F71C2 /* IFIImageFetcher.swift */; };
 		FF66050E1EB4FC4A005F71C2 /* URL+QueryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */; };
 		FF6605121EB4FF52005F71C2 /* IFIURLRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */; };
+		FF6605151EB5076E005F71C2 /* URLQueryItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6605141EB5076E005F71C2 /* URLQueryItemsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +199,7 @@
 		FF6604E11EB4F5EF005F71C2 /* IFIImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIImageFetcher.swift; sourceTree = "<group>"; };
 		FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+QueryItems.swift"; sourceTree = "<group>"; };
 		FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFIURLRequestProvider.swift; sourceTree = "<group>"; };
+		FF6605141EB5076E005F71C2 /* URLQueryItemsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryItemsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 		FF6604691EB4F106005F71C2 /* InfiniteImageTests */ = {
 			isa = PBXGroup;
 			children = (
+				FF6605131EB5074D005F71C2 /* HTTP */,
 				FF66046A1EB4F106005F71C2 /* InfiniteImageTests.swift */,
 				FF66046C1EB4F106005F71C2 /* Info.plist */,
 			);
@@ -323,6 +326,14 @@
 			children = (
 				FF6605111EB4FF52005F71C2 /* IFIURLRequestProvider.swift */,
 				FF66050D1EB4FC4A005F71C2 /* URL+QueryItems.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		FF6605131EB5074D005F71C2 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				FF6605141EB5076E005F71C2 /* URLQueryItemsTests.swift */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -597,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF66046B1EB4F106005F71C2 /* InfiniteImageTests.swift in Sources */,
+				FF6605151EB5076E005F71C2 /* URLQueryItemsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
